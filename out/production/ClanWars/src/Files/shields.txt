@@ -1,0 +1,7 @@
+-----------------------------------
+ name of shield : protection
+-----------------------------------
+
+wooden shield : 4
+iron shield : 8
+golden shield : 12

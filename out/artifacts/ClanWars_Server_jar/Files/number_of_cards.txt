@@ -1,0 +1,20 @@
+hit : 90
+theft : 16
+disarm : 16
+dodge : 30
+defense : 20
+single potion : 10
+team potion : 8
+kettle : 5
+dagger : 4
+bow : 4
+axe : 3
+sword : 3
+mace : 3
+hammer : 2
+wooden shield : 6
+iron shield : 4
+golden shield : 2
+spartan helm : 5
+knight helm : 3
+viking helm : 2

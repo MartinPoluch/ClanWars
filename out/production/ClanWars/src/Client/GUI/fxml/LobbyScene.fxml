@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="584.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.GUI.controllers.LobbyController">
+  <children>
+    <MenuBar prefHeight="0.0" prefWidth="711.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem fx:id="newGameItem" mnemonicParsing="false" text="Create new game" />
+            <MenuItem fx:id="tutorialItem" mnemonicParsing="false" text="Open tutorial" />
+              <!--<SeparatorMenuItem mnemonicParsing="false" />-->
+              <MenuItem fx:id="aboutItem" mnemonicParsing="false" text="About" />
+              <!--<SeparatorMenuItem mnemonicParsing="false" />-->
+            <MenuItem fx:id="exitItem" mnemonicParsing="false" text="Exit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="594.0" prefWidth="852.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="gamesTab" layoutX="62.0" layoutY="42.0" prefHeight="438.0" prefWidth="405.0">
+              <columns>
+                <TableColumn fx:id="gameNameCol" prefWidth="137.0" text="Name" />
+                  <TableColumn fx:id="waitingPlayersCol" prefWidth="65.0" text="Waiting" />
+                <TableColumn fx:id="capacityCol" prefWidth="133.0" text="Capacity" />
+                  <TableColumn fx:id="teamsCol" prefWidth="68.0" text="Teams" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="newGameBtn" layoutX="62.0" layoutY="497.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Create game" />
+            <Button fx:id="tutorialBtn" layoutX="229.0" layoutY="497.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Tutorial" />
+            <VBox fx:id="gameInfoContainer" layoutX="559.0" layoutY="42.0" prefHeight="431.0" prefWidth="208.0">
+               <children>
+                  <Label fx:id="gameInfoStaticText" text="Game information" />
+                  <GridPane prefHeight="123.0" prefWidth="208.0" vgap="1.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                      <RowConstraints maxHeight="25.0" prefHeight="25.0" />
+                      <RowConstraints maxHeight="25.0" minHeight="9.599998092651369" prefHeight="25.0" />
+                        <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="4.800024414062499" prefHeight="25.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="nameInfoStaticText" prefHeight="21.0" prefWidth="90.0" text="Name" GridPane.rowIndex="1" />
+                        <Label fx:id="capacityInfoStaticText" prefHeight="23.0" prefWidth="92.0" text="Capacity" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                        <Label fx:id="teamsInfoStaticText" prefHeight="18.0" prefWidth="87.0" text="Teams" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                        <Label fx:id="botLevelInfoStaticText" prefHeight="19.0" prefWidth="92.0" text="Bot level" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                        <Label fx:id="nameInfoVal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="capacityInfoVal" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="teamsInfoVal" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="botLevelInfoVal" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </GridPane>
+                  <TableView fx:id="playersTab" prefHeight="248.0" prefWidth="208.0">
+                    <columns>
+                      <TableColumn fx:id="playerNameCol" prefWidth="133.0" text="Player name" />
+                      <TableColumn fx:id="playerTypeCol" prefWidth="73.0" text="Type" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="gameTransitionBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Join game">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+            <HBox layoutX="576.0" layoutY="513.0" prefHeight="26.0" prefWidth="262.0">
+               <children>
+                  <Label fx:id="userNameStaticText" prefHeight="21.0" prefWidth="141.0" text="Your name: " />
+                  <Label fx:id="userName" prefHeight="21.0" prefWidth="132.0" text="no name" />
+               </children>
+            </HBox>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

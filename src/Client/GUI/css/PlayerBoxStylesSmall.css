@@ -1,0 +1,82 @@
+
+#playerBox {
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-background-color: 	#505050;
+    -fx-max-height: 200px;
+    -fx-max-width: 414px;
+
+}
+
+#infoBox {
+    -fx-padding: 2px;
+    -fx-min-width: 90px;
+    -fx-max-height: 200px;
+}
+
+#cardsBox {
+    -fx-max-height: 200px;
+    -fx-min-width: 320px;
+
+}
+
+#healthInfo {
+    -fx-font-family: Arial;
+    -fx-text-fill: white;
+}
+
+#infoBox {
+    -fx-padding: 4px;
+    -fx-border-width: 0 4 0 0;
+    -fx-border-style: solid;
+    -fx-border-color: black;
+}
+
+#infoBox .label {
+    -fx-font-size: 12px;
+    -fx-font-family: Arial;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+}
+
+#endMoveBtn, #ignoreBtn{
+    -fx-background-color: #C50000;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-font-size: 12px;
+    -fx-max-width: 75px;
+    -fx-max-height: 13px;
+}
+
+#healthBar {
+    -fx-accent: #C50000;
+    -fx-text-box-border: black;
+    -fx-control-inner-background: #FF8080;
+    -fx-min-height: 25px;
+    -fx-max-width: 95px;
+}
+
+#healthBar .label{
+    fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Proxima Nova";
+}
+
+#itemsHBox {
+    -fx-spacing: 2;
+}
+
+#inventory {
+    -fx-spacing: 2;
+}
+
+#detailedInfo {
+    -fx-spacing: 3;
+}
+
+
+
+

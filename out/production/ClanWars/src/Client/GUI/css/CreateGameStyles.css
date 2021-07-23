@@ -1,0 +1,43 @@
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color: #7B0100;
+    -fx-text-fill: white;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    /* interpolate color between yellow and red based on first color brightness */
+    -fx-body-color: ladder(#AAA, red 0%, darkred 100%);
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    /* interpolate color between yellow and red based on first color brightness */
+    -fx-body-color: ladder(#AAA, red 0%, darkred 100%);
+}
+
+.radio-button {
+    -fx-text-fill: white;
+    -fx-mark-color: #7B0100;
+}
+
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: white;
+}
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}
+
+#header {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: "Proxima Nova";
+    -fx-font-size: 16px;
+}

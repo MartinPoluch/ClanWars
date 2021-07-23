@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="ClanWars">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClanWars</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Client.GUI.ClientMain" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/resources/mainIcon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Clan Wars" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ClanWars.jar">
+        <element id="module-output" name="ClanWars" />
+      </element>
+    </root>
+  </artifact>
+</component>

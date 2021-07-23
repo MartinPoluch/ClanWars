@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="115.0" prefWidth="110.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.GUI.controllers.StatsInfoController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="80.0" prefWidth="50.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="105.3999755859375" minWidth="0.0" prefWidth="61.39998588562012" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="179.2" minWidth="10.0" prefWidth="68.60001411437989" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="damageIcon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/icons/damageIcon.png" />
+               </image></ImageView>
+            <ImageView fx:id="protectionIcon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../resources/icons/protectionIcon.png" />
+               </image></ImageView>
+            <ImageView fx:id="offensiveRangeIcon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../resources/icons/OffensiveRangeIcon.png" />
+               </image></ImageView>
+            <ImageView fx:id="defensiveRangeIcon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../resources/icons/defensiveRangeIcon.png" />
+               </image></ImageView>
+            <Label fx:id="damage" text="0" GridPane.columnIndex="1" />
+            <Label fx:id="protection" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="offensiveRange" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="defensiveRange" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets top="6.0" />
+   </padding>
+</VBox>

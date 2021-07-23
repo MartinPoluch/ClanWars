@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: #808080;
+}
+
+#primaryGameInfo,  #selectedCardInfo, #selectedCardName {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+#secondaryGameInfo {
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+    -fx-font-size: 15px;
+}
+
+#selectedCardName {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

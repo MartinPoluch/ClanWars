@@ -1,0 +1,72 @@
+.root {
+    -fx-background-color: #424242;
+}
+
+.label {
+    -fx-text-background-color: white;
+    -fx-font-size: 15px;
+    -fx-font-family: "Proxima Nova";
+}
+
+
+.table-view{
+    -fx-border-color: #101010;
+    -fx-border-width: 2px;
+}
+
+.text-field {
+    -fx-background-color: #424242;
+}
+
+.table-view .column-header {
+    -fx-background-color: #101010;
+}
+
+.menu-bar, .menu, .menu-item {
+    -fx-background-color: #424242;
+}
+
+.menu-item:hover {
+    -fx-background-color: #7B0100;
+}
+
+
+/*.table-view .column-header:hover {*/
+    /*-fx-background-color: #585858;*/
+/*}*/
+
+#gamesTab {
+    -fx-text-fill: black;
+    -fx-font-family: "Proxima Nova";
+    -fx-font-size: 16px;
+}
+
+#gamesTab .table-row-cell:selected {
+    -fx-text-background-color: white;
+    -fx-font-size: 16px;
+    -fx-background-color: #7B0100;
+    -fx-text-fill: white;
+}
+
+
+#nameInfoStaticText,  #capacityInfoStaticText, #teamsInfoStaticText, #botLevelInfoStaticText {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+#gameInfoStaticText {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-font-family: "Proxima Nova";
+}
+
+#userNameStaticText {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-font-family: "Proxima Nova";
+}
+
+#userName {
+    -fx-font-size: 16px;
+    -fx-font-family: "Proxima Nova";
+}

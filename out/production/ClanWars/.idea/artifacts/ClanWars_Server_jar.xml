@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ClanWars-Server:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ClanWars_Server_jar</output-path>
+    <root id="archive" name="ClanWars.jar">
+      <element id="module-output" name="ClanWars" />
+    </root>
+  </artifact>
+</component>

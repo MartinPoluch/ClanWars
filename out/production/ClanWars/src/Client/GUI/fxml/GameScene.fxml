@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.GUI.controllers.GameController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="26.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="78.0" prefWidth="20.0" spacing="4.0">
+               <children>
+                  <ImageView fx:id="lastUsedCard" fitHeight="78.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></ImageView>
+                  <StackPane fx:id="pile" prefHeight="78.0" prefWidth="36.0">
+                     <children>
+                        <ImageView fx:id="topOfDeck" fitHeight="76.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <Label fx:id="primaryGameInfo" text="Waiting for start of game" />
+            <Label fx:id="secondaryGameInfo" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="2.0">
+               <children>
+                  <Label fx:id="selectedCardName" />
+                  <Label fx:id="selectedCardInfo" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

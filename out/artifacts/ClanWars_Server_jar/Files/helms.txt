@@ -1,0 +1,7 @@
+--------------------------------------------------------------
+ name of helm : rangePlus (offensive) : rangeMinus (defensive)
+--------------------------------------------------------------
+
+spartan helm : 1 : 0
+knight helm : 0 : 1
+viking helm : 1 : 1
